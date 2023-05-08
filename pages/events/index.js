@@ -1,19 +1,7 @@
-import Link from 'next/link'; 
-export default function eventsPage({ data }) {
-	return (
-		<div>
-			<h1>Events Page</h1>
+import EventsPage from '@/src/components/events/events-page';
 
-			{data.map((ev) => (
-				<Link legacyBehavior key={ev.id} href={`events/${ev.id}`} passHref>
-				<a>
-					<img alt={ev.title} width={100} height={50} src={ev.image} />
-					<h2>{ev.title}</h2>
-				</a>
-				</Link>
-			))}
-		</div>
-	);
+export default function eventsPage({ data }) {
+	return <EventsPage data={data} />
 }
 
 export async function getStaticProps() {

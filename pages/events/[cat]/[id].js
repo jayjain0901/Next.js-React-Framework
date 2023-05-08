@@ -1,10 +1,8 @@
+import SingleEvent from "@/src/components/events/singleEvent";
+
 export default function singlePage({data}) {
    return (
-      <div>
-            <img src={data.image} width={300} height={200} alt={data.title} />
-            <h1>{data.title}</h1>
-            <p>{data.description}</p>
-      </div>
+      <SingleEvent data={data} />
    )
 }
 

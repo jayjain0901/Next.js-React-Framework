@@ -1,21 +1,9 @@
 // import { getStaticProps } from "..";
+import CatEvent from '@/src/components/events/catEvent';
 import Link from 'next/link'; 
+
 export default function index({ data, pageName }) {
-	return (
-		<div className="events-cat">
-			<h1>Events in {pageName}</h1>
-			<div>	
-				{data.map((ev) => (
-					<Link legacyBehavior key={ev.id} href={`/events/${ev.city}/${ev.id}`} passHref> 
-					<a >
-						<img height={100} width={200} src={ev.image} />
-						<h2>{ev.title}</h2>  <p>{ev.description}</p>
-					</a>
-					</Link>
-				))}	
-			</div>
-		</div>
-	);
+	return <CatEvent data={data} pageName={pageName}/>
 }
 
 export async function getStaticPaths() {

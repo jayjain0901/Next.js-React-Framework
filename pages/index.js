@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+
 import Link from 'next/link';
 import { HeaderPage } from "@/src/components/header/header-page";
 import { HomePage } from "@/src/components/home/home-page";

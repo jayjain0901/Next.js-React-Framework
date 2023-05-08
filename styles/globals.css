@@ -56,7 +56,7 @@ body {
 
 body {
   color: black;
-  font-size: large;
+  
   display: block;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

@@ -6,7 +6,9 @@ export  function MainLayout({children}) {
   return (
     <div>
       <HeaderPage />
-         {children}
+      <main>
+        {children}
+      </main>
       <FooterPage />
     </div>
   )
