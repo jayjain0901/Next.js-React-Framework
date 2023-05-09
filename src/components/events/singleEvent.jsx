@@ -47,7 +47,7 @@ export default function SingleEvent({ data }) {
       <div className="event_single_page">
          <h1>{data.title}</h1>
          <br></br>
-         <img src={data.image} width={1000} height={700} alt={data.title} />
+         <img src={data.image} width={'100%'} height={'auto'} alt={data.title} />
          <p>{data.description}</p>
          <form onSubmit={onSubmit} className='email_registration'>
             <label>Get registered for this event!</label>

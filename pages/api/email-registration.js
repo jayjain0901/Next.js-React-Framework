@@ -21,7 +21,7 @@ export default function handler(req, res) {
    // the eventId and the email into email_registered - 
    // only if that email doent exist
    // check format of email
-
+   
    const filePath = buildPath();
    const { events_categories, allEvents } = extractData(filePath);
 
@@ -50,7 +50,7 @@ export default function handler(req, res) {
                res
                   .status(409)
                   .json({
-                     message: 'This email has been registered'
+                     message: 'This email has already been registered'
                   })
                   return ev;
             }

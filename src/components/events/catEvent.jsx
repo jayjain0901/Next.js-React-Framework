@@ -9,7 +9,7 @@ export default function CatEvent({data,pageName}) {
             {data.map((ev) => (
                <Link legacyBehavior key={ev.id} href={`/events/${ev.city}/${ev.id}`} passHref>
                   <a className='card'>
-                     <img height={200} width={300} src={ev.image} />
+                     <img width={'100%'} height={'auto'} src={ev.image} />
                      <h2>{ev.title}</h2>  <p>{ev.description}</p>
                   </a>
                </Link>
