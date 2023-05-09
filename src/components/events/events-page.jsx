@@ -9,7 +9,7 @@ export default function EventsPage({ data }) {
          {data.map((ev) => (
             <Link legacyBehavior key={ev.id} href={`events/${ev.id}`} passHref>
                <a className='card'> 
-                  <img alt={ev.title} width={300} height={300} src={ev.image} />
+                  <img alt={ev.title} width={'100%'} height={'auto'}  src={ev.image} />
                   <h2>{ev.title}</h2>
                </a>
             </Link>
